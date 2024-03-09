@@ -31,7 +31,9 @@ type role = {
                 </div>
                 
                 <div class={`mt-2 flex items-center ${x.role=="Coordinators" ? 'lg:flex-row':''} flex-col`}>
-                  {x.members.map((member:{name:string,email:string,image?:string,skills?:string,link?:string})=>(
+                  {x.members.map((member:{name:string,email:string,
+                    image?:string,skills?:string,link?:string,position?:string,lead?:string
+                    })=>(
                     
                     <div class="text-xl w-fit text-[#207570] font-spaceGrotesk flex flex-col justify-center items-center p-5 gap-2">
                       {
